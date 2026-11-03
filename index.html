@@ -1,0 +1,1781 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rizki Andrian - Portofolio</title>
+    <meta name="description"
+        content="Portfolio of Rizki Andrian — Junior Fullstack Engineer specializing in ASP.NET Core & C#, React.js, Laravel, REST APIs, and modern database systems.">
+    <meta property="og:title" content="Rizki Andrian — Portfolio">
+    <meta property="og:description"
+        content="Junior Fullstack Engineer specializing in ASP.NET Core & C#, React.js, Laravel, REST APIs, and modern database systems.">
+    <meta property="og:image" content="image/profill.jpeg">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@600;700;800&display=swap"
+        rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="image/favicon.svg">
+    <link rel="stylesheet" href="css/style.css?v=71.0">
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="cyber-loader">
+            <!-- Hex-Core Tech Insignia -->
+            <div class="hex-core-wrap">
+                <div class="hex-ambient-glow"></div>
+                <svg class="hex-svg" viewBox="0 0 100 100" aria-label="RA Logo">
+                    <defs>
+                        <linearGradient id="hexGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#10b981" />
+                            <stop offset="50%" stop-color="#34d399" />
+                            <stop offset="100%" stop-color="#059669" />
+                        </linearGradient>
+                        <filter id="hexGlow" x="-20%" y="-20%" width="140%" height="140%">
+                            <feGaussianBlur stdDeviation="2.5" result="blur" />
+                            <feComposite in="SourceGraphic" in2="blur" operator="over" />
+                        </filter>
+                    </defs>
+                    <!-- Base Hexagon Track -->
+                    <polygon class="hex-track" points="50,10 85,30 85,70 50,90 15,70 15,30" />
+                    <!-- Inner Hexagon Frame -->
+                    <polygon class="hex-inner" points="50,18 78,34 78,66 50,82 22,66 22,34" />
+                    <!-- Animated Energy Flow Border -->
+                    <polygon class="hex-flow" points="50,10 85,30 85,70 50,90 15,70 15,30" />
+                    <!-- Vertex Nodes -->
+                    <circle class="hex-node node-1" cx="50" cy="10" r="2.5" />
+                    <circle class="hex-node node-2" cx="85" cy="30" r="2.5" />
+                    <circle class="hex-node node-3" cx="85" cy="70" r="2.5" />
+                    <circle class="hex-node node-4" cx="50" cy="90" r="2.5" />
+                    <circle class="hex-node node-5" cx="15" cy="70" r="2.5" />
+                    <circle class="hex-node node-6" cx="15" cy="30" r="2.5" />
+                    <!-- CPU Microchip & Circuit Bus -->
+                    <g class="cpu-circuits">
+                        <!-- Top & Bottom Bus Lines -->
+                        <line class="cpu-trace" x1="50" y1="38" x2="50" y2="24" />
+                        <line class="cpu-trace" x1="45" y1="38" x2="45" y2="28" />
+                        <line class="cpu-trace" x1="55" y1="38" x2="55" y2="28" />
+
+                        <line class="cpu-trace" x1="50" y1="62" x2="50" y2="76" />
+                        <line class="cpu-trace" x1="45" y1="62" x2="45" y2="72" />
+                        <line class="cpu-trace" x1="55" y1="62" x2="55" y2="72" />
+
+                        <!-- Angled Bus Lines to Hexagon Edges -->
+                        <path class="cpu-trace" d="M 38 45 L 30 45 L 24 38" />
+                        <path class="cpu-trace" d="M 38 50 L 25 50" />
+                        <path class="cpu-trace" d="M 38 55 L 30 55 L 24 62" />
+
+                        <path class="cpu-trace" d="M 62 45 L 70 45 L 76 38" />
+                        <path class="cpu-trace" d="M 62 50 L 75 50" />
+                        <path class="cpu-trace" d="M 62 55 L 70 55 L 76 62" />
+
+                        <!-- Circuit Connection Terminal Nodes -->
+                        <circle class="cpu-dot" cx="50" cy="24" r="1.6" />
+                        <circle class="cpu-dot" cx="50" cy="76" r="1.6" />
+                        <circle class="cpu-dot" cx="24" cy="38" r="1.6" />
+                        <circle class="cpu-dot" cx="24" cy="62" r="1.6" />
+                        <circle class="cpu-dot" cx="76" cy="38" r="1.6" />
+                        <circle class="cpu-dot" cx="76" cy="62" r="1.6" />
+                    </g>
+
+                    <!-- CPU Microchip Silicon Body -->
+                    <rect class="cpu-body" x="38" y="38" width="24" height="24" rx="4" ry="4" />
+                    <!-- CPU Inner Die -->
+                    <rect class="cpu-die" x="43" y="43" width="14" height="14" rx="2" ry="2" />
+                    <!-- Active Processing Crystal Core -->
+                    <circle class="cpu-core-crystal" cx="50" cy="50" r="2.5" />
+                </svg>
+            </div>
+            <!-- Modern Cyber HUD (Status & 100% Counter) -->
+            <div class="cyber-hud">
+                <div class="hud-status">
+                    <span class="hud-status-dot"></span>
+                    <span class="hud-status-text" id="preloaderStatus">INITIALIZING CORE</span>
+                </div>
+                <div class="hud-percentage">
+                    <span class="hud-number" id="preloaderPercent">0</span><span class="hud-symbol">%</span>
+                </div>
+            </div>
+
+            <!-- Precision Progress Bar -->
+            <div class="cyber-progress">
+                <div class="cyber-progress-track">
+                    <div class="cyber-progress-fill" id="preloaderFill"></div>
+                </div>
+            </div>
+
+            <!-- Tech Footnote -->
+            <div class="cyber-preloader-meta">
+                <span class="meta-tag">PORTFOLIO // RIZKI ANDRIAN</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cursor Glow -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#home" class="nav-logo">
+                <span class="logo-name">riizkiandrn<span class="logo-cursor">_</span></span>
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#certificates" class="nav-link">Certificates</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <!-- Ambient Technical Drafting Blueprint Watermark -->
+        <div class="hero-watermark" aria-hidden="true">
+            <svg viewBox="0 0 800 800" fill="none">
+                <circle cx="400" cy="400" r="380" stroke="currentColor" stroke-width="1.2" stroke-dasharray="4 6"
+                    opacity="0.45" />
+                <circle cx="400" cy="400" r="300" stroke="currentColor" stroke-width="1.2" opacity="0.3" />
+                <circle cx="400" cy="400" r="220" stroke="currentColor" stroke-width="1" stroke-dasharray="3 5"
+                    opacity="0.3" />
+                <circle cx="400" cy="400" r="140" stroke="currentColor" stroke-width="1" opacity="0.25" />
+                <line x1="400" y1="20" x2="400" y2="780" stroke="currentColor" stroke-width="1" opacity="0.25" />
+                <line x1="20" y1="400" x2="780" y2="400" stroke="currentColor" stroke-width="1" opacity="0.25" />
+            </svg>
+        </div>
+
+        <canvas id="particleCanvas"></canvas>
+
+        <div class="hero-container container">
+            <!-- Left Column: Arch Portrait & Dot Grid -->
+            <div class="hero-left">
+                <div class="hero-arch-wrapper">
+                    <div class="hero-arch-frame">
+                        <img src="image/profill.jpeg" alt="Rizki Andrian" class="hero-arch-img" loading="eager">
+                    </div>
+                    <!-- Dot Grid Pattern (Bottom Left) -->
+                    <div class="hero-dot-grid" aria-hidden="true">
+                        <span></span><span></span><span></span><span></span><span></span>
+                        <span></span><span></span><span></span><span></span><span></span>
+                        <span></span><span></span><span></span><span></span><span></span>
+                        <span></span><span></span><span></span><span></span><span></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column: Editorial Typography & Content -->
+            <div class="hero-right">
+                <div class="hero-title-group">
+                    <span class="hero-greeting">Hello There, I'm</span>
+                    <h1 class="hero-name"><span class="gradient-text">Rizki Andrian</span></h1>
+                    <div class="hero-title-bar"></div>
+                </div>
+                <div class="hero-typing">
+                    <span id="typingText"></span><span class="cursor-blink">|</span>
+                </div>
+                <p class="hero-subtitle">Bridging robust backend architectures and interactive modern web applications,
+                    with a focus on scalable APIs, clean code, and seamless user experiences.</p>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary">
+                        <i class="fas fa-rocket"></i> View My Projects
+                    </a>
+                    <div class="hero-dropdown">
+                        <button type="button" class="btn btn-outline hero-dropdown-btn" id="connectDropdownBtn"
+                            aria-expanded="false" aria-haspopup="true">
+                            <i class="fas fa-handshake"></i>
+                            <span>Let's Connect</span>
+                            <i class="fas fa-chevron-down dropdown-arrow"></i>
+                        </button>
+                        <div class="hero-dropdown-menu" id="connectDropdownMenu" role="menu">
+                            <a href="#contact" class="dropdown-item" role="menuitem">
+                                <div class="dropdown-item-icon">
+                                    <i class="fas fa-paper-plane"></i>
+                                </div>
+                                <div class="dropdown-item-text">
+                                    <strong>Contact Me</strong>
+                                    <small>Send a message or get in touch</small>
+                                </div>
+                            </a>
+                            <a href="cv/CV_Rizki_Andrian.pdf" class="dropdown-item" target="_blank"
+                                download="CV_Rizki_Andrian.pdf" role="menuitem">
+                                <div class="dropdown-item-icon">
+                                    <i class="fas fa-file-arrow-down"></i>
+                                </div>
+                                <div class="dropdown-item-text">
+                                    <strong>Download CV</strong>
+                                    <small>Curriculum Vitae (PDF)</small>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-icon">
+                            <i class="fas fa-folder-open"></i>
+                        </div>
+                        <div class="stat-info">
+                            <span class="stat-number" data-stat="projects">0</span>
+                            <span class="stat-label">Projects</span>
+                        </div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-icon">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <div class="stat-info">
+                            <span class="stat-number" data-stat="certificates">0</span>
+                            <span class="stat-label">Certificates</span>
+                        </div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-icon">
+                            <i class="fas fa-layer-group"></i>
+                        </div>
+                        <div class="stat-info">
+                            <span class="stat-number" data-stat="stacks">0</span>
+                            <span class="stat-label">Tech Stacks</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag"><i class="fas fa-user-astronaut"></i> Biography & Background</span>
+                <h2 class="section-title">Get To Know Me</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="about-modern-grid">
+                <!-- Left: Editorial Main Story Card -->
+                <div class="about-story-card glass-card reveal">
+                    <div class="about-card-badge-row">
+                        <span class="about-status-pill">
+                            <span class="status-pulse-dot"></span>
+                            Available for Opportunities
+                        </span>
+                    </div>
+
+                    <h3 class="about-story-title">
+                        Hello There!
+                    </h3>
+
+                    <div class="about-story-body">
+                        <p class="about-paragraph">
+                            My name is <strong class="gradient-text">Rizki Andrian</strong>.
+                            I am a fresh graduate in Information Technology specializing in <strong>Software Engineering
+                                Technology</strong>
+                            at Politeknik Negeri Padang with a cumulative GPA of 3.45 / 4.00.
+                        </p>
+                        <p class="about-paragraph">
+                            I previously worked as a <strong>Full Stack Engineer Intern at PT Bejana Inovasi
+                                Global</strong> in Bandung,
+                            where I developed and rewrote core REST APIs using ASP.NET Core (C#),
+                            tested endpoints with Swagger,
+                            and architected DTO-based integration APIs. My experience also includes
+                            real-time database synchronization with Google Firestore,
+                            engineering backend listeners, and migrating enterprise
+                            admin portals into responsive Single Page Applications
+                            using React.js and TypeScript.
+                        </p>
+                        <p class="about-paragraph">
+                            Alongside my industrial experience, I have developed diverse software solutions, ranging
+                            from web-based
+                            information systems to intelligent data solutions such as retail inventory
+                            optimization with
+                            K-Means Clustering and personalized stress-relaxation recommendation
+                            systems utilizing
+                            Content-Based Filtering. Additionally, I actively served as a Staff member
+                            in the Entrepreneurship Division (Danus) at
+                            HMJ TEKINFO, strengthening my communication, team coordination, and agile
+                            problem-solving skills.
+                        </p>
+                    </div>
+
+                    <!-- Highlight Competency Badges -->
+                    <div class="about-competencies">
+                        <span class="comp-badge"><i class="fab fa-laravel"></i> Laravel</span>
+                        <span class="comp-badge"><i class="fab fa-php"></i> PHP</span>
+                        <span class="comp-badge"><i class="fas fa-database"></i> MySQL</span>
+                        <span class="comp-badge"><i class="fab fa-figma"></i> Figma (UI/UX Design)</span>
+                        <span class="comp-badge"><i class="fas fa-network-wired"></i> ASP.NET</span>
+                        <span class="comp-badge"><i class="fas fa-code"></i> C#</span>
+                        <span class="comp-badge"><i class="fab fa-react"></i> React.js</span>
+                        <span class="comp-badge"><i class="fas fa-file-code"></i> TypeScript</span>
+                        <span class="comp-badge"><i class="fas fa-fire"></i> Google Firestore</span>
+                        <span class="comp-badge"><i class="fab fa-git-alt"></i> Git</span>
+                        <span class="comp-badge"><i class="fas fa-vial-circle-check"></i> Swagger</span>
+                        <span class="comp-badge"><i class="fas fa-chart-pie"></i> K-Means Clustering</span>
+                        <span class="comp-badge"><i class="fas fa-layer-group"></i> Full-stack Web Development</span>
+                    </div>
+                </div>
+
+                <!-- Right: Bento Metric & Credential Widgets -->
+                <div class="about-bento-column reveal reveal-right">
+                    <!-- Bento 1: Education -->
+                    <div class="bento-card glass-card">
+                        <div class="bento-header">
+                            <div class="bento-icon-box">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <span class="bento-tag">Education</span>
+                        </div>
+                        <h4 class="bento-title">Politeknik Negeri Padang</h4>
+                        <p class="bento-subtitle">D4 Software Engineering Technology (2022 – 2026)</p>
+                        <div class="bento-metric-pill">
+                            GPA <strong>3.45</strong> / 4.00
+                        </div>
+                    </div>
+
+                    <!-- Bento 2: Industry Experience -->
+                    <div class="bento-card glass-card">
+                        <div class="bento-header">
+                            <div class="bento-icon-box">
+                                <i class="fas fa-building"></i>
+                            </div>
+                            <span class="bento-tag">Latest Industry Role</span>
+                        </div>
+                        <h4 class="bento-title">PT Bejana Inovasi Global</h4>
+                        <p class="bento-subtitle">Full Stack Engineer Intern · Bandung, West Java</p>
+                        <div class="bento-tech-mini">
+                            <span>ASP.NET (C#)</span>
+                            <span>REST API</span>
+                            <span>Swagger</span>
+                            <span>Google Firestore</span>
+                            <span>React.js</span>
+                            <span>TypeScript</span>
+                            <span>Git</span>
+                        </div>
+                    </div>
+
+                    <!-- Bento 3: Organization & Leadership -->
+                    <div class="bento-card glass-card">
+                        <div class="bento-header">
+                            <div class="bento-icon-box">
+                                <i class="fas fa-users-gear"></i>
+                            </div>
+                            <span class="bento-tag">Leadership</span>
+                        </div>
+                        <h4 class="bento-title">HMJ TEKINFO PNP</h4>
+                        <p class="bento-subtitle">Staff of Business & Entrepreneurship Division (2023 – 2025)</p>
+                        <span class="bento-note"><i class="fas fa-check-double"></i> Event & Merchandise
+                            Management</span>
+                    </div>
+
+                    <!-- Bento 4: Direct Inquiries -->
+                    <div class="bento-card glass-card bento-contact-card">
+                        <div class="bento-contact-content">
+                            <div class="bento-header">
+                                <div class="bento-icon-box">
+                                    <i class="fas fa-paper-plane"></i>
+                                </div>
+                                <span class="bento-tag">Direct Inquiries</span>
+                            </div>
+                            <h4 class="bento-title">Let's build something together</h4>
+                            <p class="bento-subtitle">Padang, West Sumatra · Open for Onsite & Remote roles</p>
+                            <a href="mailto:rizkiandrian489@gmail.com" class="bento-email-link">
+                                <i class="fas fa-envelope"></i> rizkiandrian489@gmail.com
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section section-alt" id="experience">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag"><i class="fas fa-briefcase"></i> Career Journey</span>
+                <h2 class="section-title">Work & Experience</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="experience-timeline">
+                <!-- Timeline Item 1: Industry Work Experience (Featured) -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <div class="timeline-content glass-card experience-card">
+                        <div class="experience-header">
+                            <div class="experience-role-group">
+                                <span class="experience-badge">Work Experience</span>
+                                <h3 class="experience-role">Full Stack Engineer (Intern)</h3>
+                                <h4 class="experience-company">
+                                    <span class="exp-company-title">
+                                        <i class="fas fa-building"></i>
+                                        <span>PT Bejana Inovasi Global</span>
+                                    </span>
+                                    <span class="experience-location"><i class="fas fa-location-dot"></i> Bandung,
+                                        West Java, Indonesia</span>
+                                </h4>
+                            </div>
+                            <div class="experience-meta">
+                                <div class="experience-date">
+                                    <i class="fas fa-calendar-alt"></i>
+                                    <span>August 2025 – November 2025</span>
+                                </div>
+                                <a href="certificates/pdf/cert_magang_bejana.pdf" target="_blank" rel="noopener"
+                                    class="experience-cert-btn" title="View Internship Certificate & Completion Letter">
+                                    <i class="fas fa-file-pdf"></i>
+                                    <span>View Internship Document</span>
+                                    <i class="fas fa-arrow-up-right-from-square cert-btn-icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="experience-body">
+                            <ul class="experience-bullets">
+                                <li>
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Rewrote core API modules and CRUD endpoints using ASP.NET Core
+                                        (C#) with comprehensive Swagger documentation and
+                                        endpoint testing.</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Architected secure, DTO-based integration APIs with token
+                                        authentication for East Java internal applications.</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Synchronized master datasets from relational primary database to
+                                        Google Firestore with structured transaction
+                                        logging.</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Engineered backend Firestore Listeners to process real-time
+                                        mobile app payloads into the primary database.</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Migrated legacy CPI-CRM Admin portal from PHP CodeIgniter to a Single Page
+                                        Application (SPA) using React.js and
+                                        TypeScript, delivering CRUD modules, detail views, and Excel
+                                        data export.</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Designed and deployed automated Job Schedulers integrated with
+                                        the OpenCage Geocoding API for periodic location coordinate
+                                        updates.</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Collaborated actively within an agile engineering team adhering to standard
+                                        Git workflows and peer code reviews.</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="experience-tags">
+                            <span class="exp-tag">ASP.NET (C#)</span>
+                            <span class="exp-tag">REST API</span>
+                            <span class="exp-tag">Swagger</span>
+                            <span class="exp-tag">Google Firestore</span>
+                            <span class="exp-tag">React.js</span>
+                            <span class="exp-tag">TypeScript</span>
+                            <span class="exp-tag">Git</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 2: Organization Experience -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="timeline-content glass-card experience-card">
+                        <div class="experience-header">
+                            <div class="experience-role-group">
+                                <span class="experience-badge badge-org">Organization</span>
+                                <h3 class="experience-role">Staff of Business & Entrepreneurship Division (Danus)</h3>
+                                <h4 class="experience-company">
+                                    <span class="exp-company-title">
+                                        <i class="fas fa-university"></i>
+                                        <span>Himpunan Mahasiswa Jurusan Teknologi Informasi (HMJ TEKINFO)</span>
+                                    </span>
+                                    <span class="experience-location"><i class="fas fa-location-dot"></i> Politeknik
+                                        Negeri Padang</span>
+                                </h4>
+                            </div>
+                            <div class="experience-meta">
+                                <div class="experience-date">
+                                    <i class="fas fa-calendar-alt"></i>
+                                    <span>2023 – 2025</span>
+                                </div>
+                                <a href="certificates/pdf/cert_staff_danus_hmj.pdf" target="_blank" rel="noopener"
+                                    class="experience-cert-btn" title="View Certificate of Appreciation">
+                                    <i class="fas fa-award"></i>
+                                    <span>View Certificate</span>
+                                    <i class="fas fa-arrow-up-right-from-square cert-btn-icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="experience-body">
+                            <ul class="experience-bullets">
+                                <li>
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Coordinated participants and logistical operations for the department's
+                                        flagship Entrepreneurship Seminar.</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Designed official organizational uniforms (PDH) and member identity cards (ID
+                                        Cards) for HMJ TEKINFO.</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Conceptualized, designed, and managed creative merchandise lines representing
+                                        the Information Technology department.</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="experience-tags">
+                            <span class="exp-tag">Team Coordination</span>
+                            <span class="exp-tag">Graphic Design</span>
+                            <span class="exp-tag">Event Management</span>
+                            <span class="exp-tag">Public Relations</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section" id="skills">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag"><i class="fas fa-cogs"></i> Skills & Expertise</span>
+                <h2 class="section-title">What I Do Best</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="skills-grid">
+                <!-- Card 1: Backend Engineering -->
+                <div class="skill-card modern-skill-card glass-card reveal" style="--card-accent: #10b981;">
+                    <div class="skill-card-top">
+                        <div class="skill-icon-box">
+                            <i class="fas fa-server"></i>
+                        </div>
+                    </div>
+                    <div class="skill-card-body">
+                        <h3 class="skill-title">Backend Engineering</h3>
+                        <p class="skill-desc">Developing scalable server-side architectures, robust RESTful APIs, and
+                            real-time data pipelines.</p>
+                    </div>
+                    <div class="skill-card-divider"></div>
+                    <div class="skill-stack-wrap">
+                        <span class="skill-stack-label"><i class="fas fa-layer-group"></i> Technologies & Tools</span>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Laravel</span>
+                            <span class="skill-tag">PHP</span>
+                            <span class="skill-tag">MySQL</span>
+                            <span class="skill-tag">ASP.NET Core</span>
+                            <span class="skill-tag">C#</span>
+                            <span class="skill-tag">Google Firestore</span>
+                            <span class="skill-tag">RESTful APIs</span>
+                            <span class="skill-tag">Swagger</span>
+                            <span class="skill-tag">Git</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2: Frontend Development -->
+                <div class="skill-card modern-skill-card glass-card reveal" style="--card-accent: #0ea5e9;">
+                    <div class="skill-card-top">
+                        <div class="skill-icon-box">
+                            <i class="fas fa-code"></i>
+                        </div>
+                    </div>
+                    <div class="skill-card-body">
+                        <h3 class="skill-title">Frontend Development</h3>
+                        <p class="skill-desc">Building responsive, high-performance Single Page Applications (SPA) with
+                            strong type safety and modern UI patterns.</p>
+                    </div>
+                    <div class="skill-card-divider"></div>
+                    <div class="skill-stack-wrap">
+                        <span class="skill-stack-label"><i class="fas fa-layer-group"></i> Technologies & Tools</span>
+                        <div class="skill-tags">
+                            <span class="skill-tag">HTML5</span>
+                            <span class="skill-tag">CSS3</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">Bootstrap</span>
+                            <span class="skill-tag">Tailwind CSS</span>
+                            <span class="skill-tag">React.js</span>
+                            <span class="skill-tag">TypeScript</span>
+                            <span class="skill-tag">SPA Architecture</span>
+                            <span class="skill-tag">Responsive Design</span>
+                            <span class="skill-tag">REST API Integration</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3: Algorithms & Data Intelligence -->
+                <div class="skill-card modern-skill-card glass-card reveal" style="--card-accent: #8b5cf6;">
+                    <div class="skill-card-top">
+                        <div class="skill-icon-box">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                    </div>
+                    <div class="skill-card-body">
+                        <h3 class="skill-title">Algorithms & Data Intelligence</h3>
+                        <p class="skill-desc">Implementing intelligent clustering algorithms and personalized
+                            recommendation engines for data-driven optimization.</p>
+                    </div>
+                    <div class="skill-card-divider"></div>
+                    <div class="skill-stack-wrap">
+                        <span class="skill-stack-label"><i class="fas fa-layer-group"></i> Technologies & Tools</span>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Content-Based Filtering</span>
+                            <span class="skill-tag">Rule-Based Systems</span>
+                            <span class="skill-tag">Feedback Loop Systems</span>
+                            <span class="skill-tag">K-Means Clustering</span>
+                            <span class="skill-tag">Data Synchronization</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4: UI/UX & Product Design -->
+                <div class="skill-card modern-skill-card glass-card reveal" style="--card-accent: #f43f5e;">
+                    <div class="skill-card-top">
+                        <div class="skill-icon-box">
+                            <i class="fas fa-pen-ruler"></i>
+                        </div>
+                    </div>
+                    <div class="skill-card-body">
+                        <h3 class="skill-title">UI/UX & Product Design</h3>
+                        <p class="skill-desc">Crafting intuitive user flows, high-fidelity wireframes, and interactive
+                            design prototypes adhering to modern usability standards.</p>
+                    </div>
+                    <div class="skill-card-divider"></div>
+                    <div class="skill-stack-wrap">
+                        <span class="skill-stack-label"><i class="fas fa-layer-group"></i> Technologies & Tools</span>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Figma</span>
+                            <span class="skill-tag">UI/UX Design</span>
+                            <span class="skill-tag">Wireframing</span>
+                            <span class="skill-tag">Mockup</span>
+                            <span class="skill-tag">Interactive Prototyping</span>
+                            <span class="skill-tag">Design Systems</span>
+                            <span class="skill-tag">User Flow</span>
+                            <span class="skill-tag">User Research</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section" id="projects">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag"><i class="fas fa-briefcase"></i> Portfolio</span>
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <!-- Project Filters -->
+            <div class="project-filters reveal">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="design">Design</button>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project 1: Tenangin (D4 Final Project - Flagship) -->
+                <div class="project-card glass-card reveal" data-category="web">
+                    <div class="project-image-wrapper">
+                        <img src="projects/tenangin.png"
+                            alt="Tenangin - Student Stress Relaxation Recommendation System" class="project-image">
+                        <div class="project-overlay">
+                            <span class="project-category">Full Stack & AI</span>
+                            <a href="https://drive.google.com/file/d/1P0Onwh2A5ug_oswO9rkszUfvv75cBlaS/view?usp=sharing"
+                                target="_blank" rel="noopener" class="project-link" title="View Final Project Document">
+                                <i class="fas fa-file-pdf"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="project-body">
+                        <h3 class="project-title">Tenangin — Student Stress Relaxation Recommendation System</h3>
+                        <p class="project-text">
+                            A personalized recommendation system engineered for evaluating and reducing academic stress
+                            among
+                            university students using the PSS-10 psychometric instrument. Integrates Rule-Based
+                            Recommendation
+                            and Content-Based Filtering algorithms featuring an automated feedback loop for adaptive
+                            personalization.
+                        </p>
+
+                        <div class="project-tech">
+                            <span>Laravel</span>
+                            <span>Blade</span>
+                            <span>MySQL</span>
+                            <span>PSS-10 Assessment</span>
+                            <span>Rule-Based Recommendation</span>
+                            <span>Content-Based Filtering</span>
+                            <span>Adaptive Feedback Loop</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://github.com/RizkiAndrian16/tenangin-app" target="_blank" rel="noopener"
+                                class="project-action-link">
+                                <i class="fab fa-github"></i> View GitHub
+                            </a>
+                            <a href="https://drive.google.com/file/d/1P0Onwh2A5ug_oswO9rkszUfvv75cBlaS/view?usp=sharing"
+                                target="_blank" rel="noopener" class="project-action-link">
+                                <i class="fas fa-file-pdf"></i> View Document
+                            </a>
+                        </div>
+                        <dl class="project-details">
+                            <div>
+                                <dt>Problem</dt>
+                                <dd>High levels of academic stress among college students requiring personalized,
+                                    measurable,
+                                    and clinically sound relaxation intervention recommendations.</dd>
+                            </div>
+                            <div>
+                                <dt>Contribution</dt>
+                                <dd>Architected the full-stack system, implemented hybrid recommendation algorithms, and
+                                    integrated PSS-10 psychological assessment workflows.</dd>
+                            </div>
+                            <div>
+                                <dt>Architecture</dt>
+                                <dd>Laravel MVC backend, Blade templating interface, Python/PHP hybrid recommendation
+                                    engine,
+                                    and relational MySQL database.</dd>
+                            </div>
+                            <div>
+                                <dt>Impact</dt>
+                                <dd>Catalog verified by professional psychologists; empirical evaluation across 21 test
+                                    subject
+                                    pairs demonstrated an average stress score reduction from 30.33 to 20.62.</dd>
+                            </div>
+                        </dl>
+                    </div>
+                </div>
+
+                <!-- Project 2: CPI-CRM (PT Bejana Inovasi Global) -->
+                <div class="project-card glass-card reveal" data-category="web">
+                    <div class="project-image-wrapper">
+                        <img src="projects/cpi-crm.png" alt="CPI-CRM Enterprise Management System"
+                            class="project-image">
+                        <div class="project-overlay">
+                            <span class="project-category">Enterprise Full Stack</span>
+                            <a href="https://drive.google.com/file/d/1Zp6PJwEYRqXPNH17vtL99ztuZxKcw57U/view?usp=sharing"
+                                target="_blank" rel="noopener" class="project-link" title="View Internship Document">
+                                <i class="fas fa-file-pdf"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="project-body">
+                        <h3 class="project-title">CPI-CRM — Enterprise Management System</h3>
+                        <p class="project-text">
+                            End-to-end modernization of the CPI-CRM enterprise ecosystem: re-architecting core backend
+                            APIs using
+                            ASP.NET (C#) with Swagger documentation, real-time master data synchronization via Google
+                            Firestore
+                            listeners for field mobile apps, migrating admin portal to a React.js + TypeScript SPA, and
+                            background
+                            job scheduling with OpenCage Geocoding.
+                        </p>
+
+                        <div class="project-tech">
+                            <span>ASP.NET (C#)</span>
+                            <span>React.js</span>
+                            <span>TypeScript</span>
+                            <span>Google Firestore</span>
+                            <span>Swagger API</span>
+                            <span>OpenCage API</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://drive.google.com/file/d/1Zp6PJwEYRqXPNH17vtL99ztuZxKcw57U/view?usp=sharing"
+                                target="_blank" rel="noopener" class="project-action-link">
+                                <i class="fas fa-file-pdf"></i> View Internship Document
+                            </a>
+                        </div>
+                        <dl class="project-details">
+                            <div>
+                                <dt>Problem</dt>
+                                <dd>Legacy CodeIgniter backend and outdated admin panel suffering from slow response
+                                    times, lack
+                                    of real-time sync, and unscalable API contracts.</dd>
+                            </div>
+                            <div>
+                                <dt>Contribution</dt>
+                                <dd>Engineered ASP.NET C# DTO APIs, Firestore backend listeners for real-time mobile
+                                    data sync,
+                                    and migrated key administrative modules to React TypeScript.</dd>
+                            </div>
+                            <div>
+                                <dt>Architecture</dt>
+                                <dd>ASP.NET Web API backend, React.js Single Page Application, Google Firestore
+                                    real-time NoSQL
+                                    database, and Microsoft SQL Server.</dd>
+                            </div>
+                            <div>
+                                <dt>Impact</dt>
+                                <dd>Operational field surveys, employee attendance logs, and verified geolocation
+                                    coordinates
+                                    are processed in real-time with zero data drift.</dd>
+                            </div>
+                        </dl>
+                    </div>
+                </div>
+
+                <!-- Project 3: Toko Emas Saudara Baru (K-Means Clustering) -->
+                <div class="project-card glass-card reveal" data-category="web">
+                    <div class="project-image-wrapper">
+                        <img src="projects/tokoemas.png"
+                            alt="Toko Emas Saudara Baru - K-Means Stock Inventory Optimization" class="project-image">
+                        <div class="project-overlay">
+                            <span class="project-category">Data Mining & Web</span>
+                            <a href="https://github.com/RizkiAndrian16/inventaris-saudara-baru" target="_blank"
+                                rel="noopener" class="project-link" title="View GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="project-body">
+                        <h3 class="project-title">Toko Emas Saudara Baru — K-Means Inventory Optimization</h3>
+                        <p class="project-text">
+                            A web-based gold jewelry inventory management and optimization platform built independently.
+                            Implements the K-Means Clustering algorithm to segment jewelry sales trends (Fast-Moving,
+                            Medium,
+                            Slow-Moving) from historical Excel sales transactions to maximize inventory turnover and
+                            procurement
+                            efficiency.
+                        </p>
+
+                        <div class="project-tech">
+                            <span>Laravel</span>
+                            <span>PHP</span>
+                            <span>MySQL</span>
+                            <span>K-Means Clustering</span>
+                            <span>Excel Data Import</span>
+                            <span>Bootstrap</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://github.com/RizkiAndrian16/inventaris-saudara-baru" target="_blank"
+                                rel="noopener" class="project-action-link">
+                                <i class="fab fa-github"></i> View GitHub
+                            </a>
+                        </div>
+                        <dl class="project-details">
+                            <div>
+                                <dt>Problem</dt>
+                                <dd>Financial capital lockup caused by slow-moving jewelry items and recurring stockouts
+                                    on
+                                    high-demand gold ornaments.</dd>
+                            </div>
+                            <div>
+                                <dt>Contribution</dt>
+                                <dd>Built the full-stack web application independently, developed an Excel transaction
+                                    ingestion
+                                    pipeline, implemented K-Means clustering, and generated automated stock analytics.
+                                </dd>
+                            </div>
+                            <div>
+                                <dt>Architecture</dt>
+                                <dd>Laravel MVC framework, MySQL relational database, and data clustering processing
+                                    module.</dd>
+                            </div>
+                            <div>
+                                <dt>Impact</dt>
+                                <dd>Empowered jewelry store owners to forecast inventory procurement with data-driven
+                                    precision,
+                                    minimizing dead stock risks.</dd>
+                            </div>
+                        </dl>
+                    </div>
+                </div>
+
+                <!-- Project 4: SIPASTA (Final Project Scheduling Platform) -->
+                <div class="project-card glass-card reveal" data-category="web">
+                    <div class="project-image-wrapper">
+                        <img src="projects/sipasta.png" alt="SIPASTA - Final Project & Defense Scheduling Platform"
+                            class="project-image">
+                        <div class="project-overlay">
+                            <span class="project-category">Academic Web System</span>
+                            <a href="https://github.com/RizkiAndrian16/sipasta" target="_blank" rel="noopener"
+                                class="project-link" title="View GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="project-body">
+                        <h3 class="project-title">SIPASTA — Final Project & Defense Scheduling Platform</h3>
+                        <p class="project-text">
+                            An integrated academic exit-point platform for the Information Technology Department at
+                            State
+                            Polytechnic of Padang (PNP). Streamlines the entire final project lifecycle: internship
+                            placement
+                            registration, thesis title submission, mentoring logbooks, proposal defense scheduling, and
+                            final
+                            defense evaluation (SITA).
+                        </p>
+
+                        <div class="project-tech">
+                            <span>Laravel</span>
+                            <span>PHP</span>
+                            <span>MySQL</span>
+                            <span>Multi-Role RBAC</span>
+                            <span>Document Workflow</span>
+                            <span>Academic Portal</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://github.com/RizkiAndrian16/sipasta" target="_blank" rel="noopener"
+                                class="project-action-link">
+                                <i class="fab fa-github"></i> View GitHub
+                            </a>
+                        </div>
+                        <dl class="project-details">
+                            <div>
+                                <dt>Problem</dt>
+                                <dd>Time-consuming paper-based approval workflows and frequent room booking collisions
+                                    during
+                                    thesis defense sessions.</dd>
+                            </div>
+                            <div>
+                                <dt>Contribution</dt>
+                                <dd>Developed an independent multi-role system (students, advisors, examiners,
+                                    coordinators),
+                                    real-time defense room allocation, and digital document verification.</dd>
+                            </div>
+                            <div>
+                                <dt>Architecture</dt>
+                                <dd>Laravel MVC backend, multi-guard authentication with role-based access control
+                                    (RBAC), and
+                                    relational MySQL database.</dd>
+                            </div>
+                            <div>
+                                <dt>Impact</dt>
+                                <dd>Achieved 100% digital, paperless, and transparent final project administration with
+                                    real-time progress tracking across academic cohorts.</dd>
+                            </div>
+                        </dl>
+                    </div>
+                </div>
+
+                <!-- Project 5: SIPENTA (PBL Team Project) -->
+                <div class="project-card glass-card reveal" data-category="web">
+                    <div class="project-image-wrapper">
+                        <img src="projects/pbl.png" alt="SIPENTA - PBL Final Project Scheduling Portal"
+                            class="project-image">
+                        <div class="project-overlay">
+                            <span class="project-category">Team PBL & Web</span>
+                            <a href="https://github.com/RizkiAndrian16/pbl_sipenta" target="_blank" rel="noopener"
+                                class="project-link" title="View GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="project-body">
+                        <h3 class="project-title">SIPENTA — Final Project Scheduling Portal (PBL)</h3>
+                        <p class="project-text">
+                            A web-based academic thesis scheduling information system developed through team-based
+                            Project Based
+                            Learning (PBL). Focused on user interface design in Figma, Laravel backend application
+                            logic, and
+                            relational database schema modeling.
+                        </p>
+
+                        <div class="project-tech">
+                            <span>Laravel</span>
+                            <span>PHP</span>
+                            <span>MySQL</span>
+                            <span>Figma (UI/UX)</span>
+                            <span>Team Collaboration</span>
+                            <span>Agile PBL</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://github.com/RizkiAndrian16/pbl_sipenta" target="_blank" rel="noopener"
+                                class="project-action-link">
+                                <i class="fab fa-github"></i> View GitHub
+                            </a>
+                        </div>
+                        <dl class="project-details">
+                            <div>
+                                <dt>Problem</dt>
+                                <dd>Initial institutional requirement to digitize thesis title submissions and academic
+                                    progress
+                                    monitoring for the PNP IT Department.</dd>
+                            </div>
+                            <div>
+                                <dt>Contribution</dt>
+                                <dd>Designed UI/UX prototypes in Figma, modeled entity-relationship database schemas,
+                                    and
+                                    co-developed backend modules within an agile team workflow.</dd>
+                            </div>
+                            <div>
+                                <dt>Architecture</dt>
+                                <dd>Laravel web framework, MySQL database, and collaborative Git version control.</dd>
+                            </div>
+                            <div>
+                                <dt>Impact</dt>
+                                <dd>Established a robust architectural foundation and user workflow benchmark that
+                                    directly
+                                    informed the subsequent development of SIPASTA.</dd>
+                            </div>
+                        </dl>
+                    </div>
+                </div>
+
+                <!-- Project 6: Digital Graduation Invitation -->
+                <div class="project-card glass-card reveal" data-category="web">
+                    <div class="project-image-wrapper">
+                        <img src="projects/undangan.png" alt="Digital Graduation Invitation - S.Tr.Kom"
+                            class="project-image">
+                        <div class="project-overlay">
+                            <span class="project-category">Interactive Web</span>
+                            <a href="https://undangan-wisuda-six.vercel.app" target="_blank" rel="noopener"
+                                class="project-link" title="View Live Demo">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="project-body">
+                        <h3 class="project-title">Digital Graduation Invitation — S.Tr.Kom</h3>
+                        <p class="project-text">
+                            An interactive, mobile-responsive digital graduation invitation celebrating academic
+                            commencement
+                            for Applied Bachelor of Computer Science. Features an interactive envelope opening
+                            animation,
+                            ambient background audio playback, ceremony rundown schedule, integrated Google Maps venue
+                            navigation,
+                            and a live guest greeting book.
+                        </p>
+
+                        <div class="project-tech">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                            <span>Web Audio API</span>
+                            <span>Google Maps API</span>
+                            <span>Vercel Deployment</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://undangan-wisuda-six.vercel.app" target="_blank" rel="noopener"
+                                class="project-action-link">
+                                <i class="fas fa-arrow-up-right-from-square"></i> View Demo
+                            </a>
+                            <a href="https://github.com/RizkiAndrian16/undangan-wisuda" target="_blank" rel="noopener"
+                                class="project-action-link">
+                                <i class="fab fa-github"></i> View GitHub
+                            </a>
+                        </div>
+                        <dl class="project-details">
+                            <div>
+                                <dt>Problem</dt>
+                                <dd>Static physical invitations lacked interactive ceremony context, live venue
+                                    directions, and
+                                    borderless guest engagement.</dd>
+                            </div>
+                            <div>
+                                <dt>Contribution</dt>
+                                <dd>Engineered an elegant responsive visual layout across all mobile viewport sizes,
+                                    integrated
+                                    HTML5 audio and interactive map embeds, and deployed via Vercel CDN.</dd>
+                            </div>
+                            <div>
+                                <dt>Architecture</dt>
+                                <dd>Modern frontend web architecture, dynamic DOM manipulation, CSS keyframe animations,
+                                    and
+                                    cloud edge deployment on Vercel.</dd>
+                            </div>
+                            <div>
+                                <dt>Impact</dt>
+                                <dd>Instant global accessibility delivering a personalized, memorable invitation
+                                    experience with
+                                    real-time guest well-wishes.</dd>
+                            </div>
+                        </dl>
+                    </div>
+                </div>
+
+                <!-- Project 7: ToDo List & Budget Allocation App -->
+                <div class="project-card glass-card reveal" data-category="web">
+                    <div class="project-image-wrapper">
+                        <img src="projects/todolist.png" alt="ToDo List & Budget Allocation Management App"
+                            class="project-image">
+                        <div class="project-overlay">
+                            <span class="project-category">Productivity Web</span>
+                            <a href="https://github.com/RizkiAndrian16/TodooList2-App" target="_blank" rel="noopener"
+                                class="project-link" title="View GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="project-body">
+                        <h3 class="project-title">ToDo List & Budget Allocation App</h3>
+                        <p class="project-text">
+                            A dual-purpose web productivity application that seamlessly blends daily task tracking with
+                            financial
+                            budget allocation. Enables users to manage task completion states (Completed / Pending)
+                            while
+                            monitoring active wallet balances and calculating total allocated funds in real-time.
+                        </p>
+
+                        <div class="project-tech">
+                            <span>Laravel</span>
+                            <span>Blade</span>
+                            <span>PHP</span>
+                            <span>MySQL</span>
+                            <span>CSS3</span>
+                            <span>Session State Management</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://github.com/RizkiAndrian16/TodooList2-App" target="_blank" rel="noopener"
+                                class="project-action-link">
+                                <i class="fab fa-github"></i> View GitHub
+                            </a>
+                        </div>
+                        <dl class="project-details">
+                            <div>
+                                <dt>Problem</dt>
+                                <dd>Traditional task lists decouple actionable items from the financial expenditure
+                                    required
+                                    to execute them, causing budget overruns.</dd>
+                            </div>
+                            <div>
+                                <dt>Contribution</dt>
+                                <dd>Developed the full Laravel MVC architecture, wallet balance state simulation (top-up
+                                    & reset),
+                                    and task-specific expense calculation modules.</dd>
+                            </div>
+                            <div>
+                                <dt>Architecture</dt>
+                                <dd>Laravel MVC application, Blade component templating, and reactive financial balance
+                                    state
+                                    management.</dd>
+                            </div>
+                            <div>
+                                <dt>Impact</dt>
+                                <dd>Assists users in prioritizing daily deliverables while maintaining strict financial
+                                    discipline
+                                    within a unified interface.</dd>
+                            </div>
+                        </dl>
+                    </div>
+                </div>
+
+
+
+                <!-- Project 8: Food Delivery Mobile App UI/UX (Solo) -->
+                <div class="project-card glass-card reveal" data-category="design">
+                    <div class="project-image-wrapper fit-contain bg-design-food">
+                        <img src="projects/food-delivery.png" alt="Food Delivery Mobile App UI/UX Design"
+                            class="project-image">
+                        <div class="project-overlay">
+                            <span class="project-category">UI/UX Design</span>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">Food Delivery Mobile App UI/UX</h3>
+                        <p class="project-text">
+                            Mobile user interface and experience design focused on rapid navigation and intuitive
+                            culinary
+                            discovery for local cuisine (Kiibob Food). Features mouthwatering visual showcases, instant
+                            category filtering, distance-based nearest restaurant discovery, and an optimized checkout
+                            flow.
+                        </p>
+                        <div class="project-tech">
+                            <span>Figma</span>
+                            <span>Mobile UI/UX</span>
+                            <span>Solo Project</span>
+                            <span>Design System</span>
+                            <span>Interactive Prototyping</span>
+                        </div>
+                        <dl class="project-details">
+                            <div>
+                                <dt>Problem</dt>
+                                <dd>Food delivery interfaces are often cluttered with excessive information, hindering
+                                    users
+                                    from finding dishes and add-on beverages quickly.</dd>
+                            </div>
+                            <div>
+                                <dt>Contribution</dt>
+                                <dd>Designed independently end-to-end, crafting user journeys from low-fidelity
+                                    wireframes
+                                    to polished high-fidelity interactive prototypes in Figma.</dd>
+                            </div>
+                            <div>
+                                <dt>Architecture</dt>
+                                <dd>Mobile-First UX, Atomic Design Components, and Thumb-Zone Navigation.</dd>
+                            </div>
+                            <div>
+                                <dt>Impact</dt>
+                                <dd>A clean, intuitive interface that enables users to browse menus and complete orders
+                                    within seconds.</dd>
+                            </div>
+                        </dl>
+                    </div>
+                </div>
+
+                <!-- Project 9: Kiijek — Super App & Ride Hailing UI/UX (Solo) -->
+                <div class="project-card glass-card reveal" data-category="design">
+                    <div class="project-image-wrapper fit-contain bg-design-kijek">
+                        <img src="projects/kijek-figma.png" alt="Kiijek - Super App & Ride Hailing UI/UX Design"
+                            class="project-image">
+                        <div class="project-overlay">
+                            <span class="project-category">UI/UX Design</span>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">Kiijek — Super App & Ride Hailing UI/UX</h3>
+                        <p class="project-text">
+                            Comprehensive multi-service Super App UI design encompassing ride hailing (KiiRide, KiiCar),
+                            food delivery (KiiFood), express courier (KiiSend), grocery shopping (KiiMart, KiiShop), and
+                            bill payments. Features an engaging onboarding splash, unified authentication, digital
+                            wallet
+                            balance integration, and driver rating workflows.
+                        </p>
+                        <div class="project-tech">
+                            <span>Figma</span>
+                            <span>Super App UI</span>
+                            <span>Solo Project</span>
+                            <span>Component Library</span>
+                            <span>Interactive Flow</span>
+                        </div>
+                        <dl class="project-details">
+                            <div>
+                                <dt>Problem</dt>
+                                <dd>Harmonizing an extensive multi-service daily ecosystem into a cohesive mobile home
+                                    screen
+                                    without causing cognitive overload.</dd>
+                            </div>
+                            <div>
+                                <dt>Contribution</dt>
+                                <dd>Executed independently, formulating the multi-service information architecture,
+                                    structured
+                                    icon grids, wallet balance modules, and promotional banners in Figma.</dd>
+                            </div>
+                            <div>
+                                <dt>Architecture</dt>
+                                <dd>Figma Auto-Layout, Modern Lavender Brand Identity, Reusable Component Variants, and
+                                    User
+                                    Journey Mapping.</dd>
+                            </div>
+                            <div>
+                                <dt>Impact</dt>
+                                <dd>Maintains high visual consistency across diverse service verticals with fast,
+                                    frictionless
+                                    cross-feature navigation.</dd>
+                            </div>
+                        </dl>
+                    </div>
+                </div>
+
+                <!-- Project 10: Emas Mobile — Jewelry E-Commerce & Investment UI/UX (Solo) -->
+                <div class="project-card glass-card reveal" data-category="design">
+                    <div class="project-image-wrapper fit-contain bg-design-emas">
+                        <img src="projects/emas-mobile.png"
+                            alt="Emas Mobile - Jewelry E-Commerce & Investment UI/UX Design" class="project-image">
+                        <div class="project-overlay">
+                            <span class="project-category">UI/UX Design</span>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">Emas Mobile — Jewelry E-Commerce & Investment UI/UX</h3>
+                        <p class="project-text">
+                            Mobile e-commerce and investment catalog interface for gold jewelry (Toko Emas Saudara Baru
+                            & Local
+                            Stores). Built around the philosophy of "Adorn While Investing", featuring warm premium gold
+                            visual
+                            palettes, interactive onboarding, 24K gold catalog, nearby store geolocation tracking, and
+                            installment options.
+                        </p>
+                        <div class="project-tech">
+                            <span>Figma</span>
+                            <span>Mobile E-Commerce</span>
+                            <span>Solo Project</span>
+                            <span>Visual Branding</span>
+                            <span>Card-Based Layout</span>
+                        </div>
+                        <dl class="project-details">
+                            <div>
+                                <dt>Problem</dt>
+                                <dd>Bridging traditional brick-and-mortar jewelry shopping to mobile digital experiences
+                                    while
+                                    instilling elegance and financial trust.</dd>
+                            </div>
+                            <div>
+                                <dt>Contribution</dt>
+                                <dd>Designed independently, defining the brand visual identity, interactive onboarding
+                                    walkthroughs, local store radius discovery, and product showcase cards in Figma.
+                                </dd>
+                            </div>
+                            <div>
+                                <dt>Architecture</dt>
+                                <dd>Warm Gold Harmony Palette, Card-Based Discovery, Location Radius Mapping, and
+                                    Delightful
+                                    Micro-Interactions.</dd>
+                            </div>
+                            <div>
+                                <dt>Impact</dt>
+                                <dd>A luxurious, highly informative digital jewelry shopping journey that inspires
+                                    purchasing
+                                    confidence and financial security.</dd>
+                            </div>
+                        </dl>
+                    </div>
+                </div>
+
+                <!-- Project 11: Hai Hai Laundry — Mobile Order & Tracking UI/UX (Collaborative) -->
+                <div class="project-card glass-card reveal" data-category="design">
+                    <div class="project-image-wrapper fit-contain bg-design-laundry">
+                        <img src="projects/laundry-kelompok.png"
+                            alt="Hai Hai Laundry - Mobile Order & Tracking UI/UX Design" class="project-image">
+                        <div class="project-overlay">
+                            <span class="project-category">UI/UX Collaborative</span>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">Hai Hai Laundry — Mobile Order & Tracking UI/UX</h3>
+                        <p class="project-text">
+                            A collaborative two-member design project creating an end-to-end 17-screen user interface
+                            for
+                            on-demand digital laundry services. Spans illustrative onboarding, laundry package selection
+                            (Wash & Iron, Dry Clean, Shoes), map pin pickup scheduling, transparent cost breakdown,
+                            payment
+                            confirmation, and live Order Queue Tracking.
+                        </p>
+                        <div class="project-tech">
+                            <span>Figma</span>
+                            <span>Team Project (2 Members)</span>
+                            <span>17-Screen Workflow</span>
+                            <span>End-to-End UX</span>
+                            <span>Order Tracking</span>
+                        </div>
+                        <dl class="project-details">
+                            <div>
+                                <dt>Problem</dt>
+                                <dd>Traditional laundry customers struggle to monitor the washing and drying progress of
+                                    their
+                                    garments and lack clear pickup or delivery time estimates.</dd>
+                            </div>
+                            <div>
+                                <dt>Contribution</dt>
+                                <dd>Co-designed collaboratively in a pair team, mapping the complete 17-screen user
+                                    journey
+                                    from onboarding, geolocation pin pickup, to live queue tracking in Figma.</dd>
+                            </div>
+                            <div>
+                                <dt>Architecture</dt>
+                                <dd>Collaborative Figma Workspace, Multi-Screen Workflow, Step-by-Step Progress Stepper,
+                                    and
+                                    Location Mapping.</dd>
+                            </div>
+                            <div>
+                                <dt>Impact</dt>
+                                <dd>A transparent, end-to-end digital laundry order journey that provides real-time
+                                    certainty
+                                    on garment readiness for modern consumers.</dd>
+                            </div>
+                        </dl>
+                    </div>
+                </div>
+
+                <!-- Project 12: BobCast — Audio Entertainment & Podcast UI/UX (Solo) -->
+                <div class="project-card glass-card reveal" data-category="design">
+                    <div class="project-image-wrapper fit-contain bg-design-bobcast">
+                        <img src="projects/bobcast.png"
+                            alt="BobCast - Audio Entertainment & Podcast Mobile App UI/UX Design" class="project-image">
+                        <div class="project-overlay">
+                            <span class="project-category">UI/UX Design</span>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">BobCast — Audio Entertainment & Podcast UI/UX</h3>
+                        <p class="project-text">
+                            All-in-one mobile audio entertainment UI/UX design (BobCast) integrating on-demand podcast
+                            streaming,
+                            voice audio series, live broadcasting, interactive radio stations, and digital audiobooks.
+                            Employs a
+                            comfortable dark theme tailored for nighttime listening, personalized "For You" content
+                            discovery,
+                            city-by-city radio curation, and custom audio library management.
+                        </p>
+                        <div class="project-tech">
+                            <span>Figma</span>
+                            <span>Solo Project</span>
+                            <span>Mobile UI/UX</span>
+                            <span>Dark Theme</span>
+                            <span>Audio Streaming</span>
+                            <span>Content Discovery</span>
+                        </div>
+                        <dl class="project-details">
+                            <div>
+                                <dt>Problem</dt>
+                                <dd>Listeners frequently juggle fragmented apps to enjoy podcasts, narrative audio
+                                    series,
+                                    live broadcasts, and audiobooks without an eye-friendly dark interface.</dd>
+                            </div>
+                            <div>
+                                <dt>Contribution</dt>
+                                <dd>Designed independently (Solo Project), structuring the entire user experience (UX)
+                                    and
+                                    visual design (UI) from splash launch, content feeds, live broadcast players, to
+                                    library
+                                    and user profile settings.</dd>
+                            </div>
+                            <div>
+                                <dt>Architecture</dt>
+                                <dd>Figma Dark Mode Design System, Bottom Navigation Bar (Home, Search, Live, Library,
+                                    Profile),
+                                    Top Discovery Tabs (For You, BobCast, AudioSeries, Radio, AudioBook), Card-based
+                                    Discovery,
+                                    and Modal Bottom Sheets.</dd>
+                            </div>
+                            <div>
+                                <dt>Impact</dt>
+                                <dd>Delivers a unified, immersive interactive audio ecosystem that simplifies
+                                    discovering and
+                                    enjoying premium spoken audio content in an elegant mobile interface.</dd>
+                            </div>
+                        </dl>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section class="section section-alt" id="certificates">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag"><i class="fas fa-award"></i> Achievements</span>
+                <h2 class="section-title">Certificates & Awards</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="certificates-grid">
+
+                <!-- 1. Magang PT Bejana Inovasi Global -->
+                <div class="cert-card glass-card reveal">
+                    <a href="certificates/pdf/cert_magang_bejana.pdf" target="_blank" rel="noopener"
+                        style="display: block; text-decoration: none; color: inherit;">
+                        <div class="cert-image-wrapper">
+                            <img src="certificates/images/cert_magang_bejana.png"
+                                alt="Sertifikat Magang Full Stack Engineer PT Bejana Inovasi Global" class="cert-image">
+                        </div>
+                        <div class="cert-body">
+                            <h4>Full Stack Engineer (Intern)</h4>
+                            <p style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 4px;">PT Bejana
+                                Inovasi Global</p>
+                            <p style="font-size: 0.8rem; color: var(--accent-3); margin-top: 6px;"><i
+                                    class="fas fa-file-pdf"></i> View Certificate</p>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- 2. Staf Danus HMJ TI PNP -->
+                <div class="cert-card glass-card reveal">
+                    <a href="certificates/pdf/cert_staff_danus_hmj.pdf" target="_blank" rel="noopener"
+                        style="display: block; text-decoration: none; color: inherit;">
+                        <div class="cert-image-wrapper">
+                            <img src="certificates/images/cert_staff_danus_hmj.png"
+                                alt="Sertifikat Staf Divisi Dana Usaha HMJ TI PNP" class="cert-image">
+                        </div>
+                        <div class="cert-body">
+                            <h4>Staf Divisi Dana Usaha (Danus)</h4>
+                            <p style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 4px;">HMJ Teknologi
+                                Informasi PNP</p>
+                            <p style="font-size: 0.8rem; color: var(--accent-3); margin-top: 6px;"><i
+                                    class="fas fa-file-pdf"></i> View Certificate</p>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- 3. Website Development Fundamental - MySkill -->
+                <div class="cert-card glass-card reveal">
+                    <a href="certificates/pdf/cert_web_myskill.pdf" target="_blank" rel="noopener"
+                        style="display: block; text-decoration: none; color: inherit;">
+                        <div class="cert-image-wrapper">
+                            <img src="certificates/images/cert_web_myskill.png"
+                                alt="Sertifikat Website Development Fundamental MySkill" class="cert-image">
+                        </div>
+                        <div class="cert-body">
+                            <h4>Website Development Fundamental</h4>
+                            <p style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 4px;">MySkill (PT
+                                Linimuda Inspirasi Negeri)</p>
+                            <p style="font-size: 0.8rem; color: var(--accent-3); margin-top: 6px;"><i
+                                    class="fas fa-file-pdf"></i> View Certificate</p>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- 4. Figma for UI/UX Design - MySkill -->
+                <div class="cert-card glass-card reveal">
+                    <a href="certificates/pdf/cert_figma_myskill.pdf" target="_blank" rel="noopener"
+                        style="display: block; text-decoration: none; color: inherit;">
+                        <div class="cert-image-wrapper">
+                            <img src="certificates/images/cert_figma_myskill.png"
+                                alt="Sertifikat Figma for UI/UX Design MySkill" class="cert-image">
+                        </div>
+                        <div class="cert-body">
+                            <h4>Figma for UI/UX Design</h4>
+                            <p style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 4px;">MySkill (PT
+                                Linimuda Inspirasi Negeri)</p>
+                            <p style="font-size: 0.8rem; color: var(--accent-3); margin-top: 6px;"><i
+                                    class="fas fa-file-pdf"></i> View Certificate</p>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- 5. Oracle Primavera P6 - Oracle Academy -->
+                <div class="cert-card glass-card reveal">
+                    <a href="certificates/pdf/cert_oracle_primavera_p6.pdf" target="_blank" rel="noopener"
+                        style="display: block; text-decoration: none; color: inherit;">
+                        <div class="cert-image-wrapper">
+                            <img src="certificates/images/cert_oracle_primavera_p6.png"
+                                alt="Sertifikat Oracle Primavera P6 Professional" class="cert-image">
+                        </div>
+                        <div class="cert-body">
+                            <h4>Oracle Primavera P6 Professional</h4>
+                            <p style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 4px;">Oracle Academy
+                            </p>
+                            <p style="font-size: 0.8rem; color: var(--accent-3); margin-top: 6px;"><i
+                                    class="fas fa-file-pdf"></i> View Certificate</p>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- 6. Red Hat System Administration I (RH124) -->
+                <div class="cert-card glass-card reveal">
+                    <a href="certificates/pdf/cert_redhat_rh124.pdf" target="_blank" rel="noopener"
+                        style="display: block; text-decoration: none; color: inherit;">
+                        <div class="cert-image-wrapper">
+                            <img src="certificates/images/cert_redhat_rh124.png"
+                                alt="Sertifikat Red Hat System Administration I (RH124)" class="cert-image">
+                        </div>
+                        <div class="cert-body">
+                            <h4>Red Hat System Administration I (RH124)</h4>
+                            <p style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 4px;">Red Hat</p>
+                            <p style="font-size: 0.8rem; color: var(--accent-3); margin-top: 6px;"><i
+                                    class="fas fa-file-pdf"></i> View Certificate</p>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- 7. AWS Academy Cloud Developing -->
+                <div class="cert-card glass-card reveal">
+                    <a href="certificates/pdf/cert_aws_cloud_developing.pdf" target="_blank" rel="noopener"
+                        style="display: block; text-decoration: none; color: inherit;">
+                        <div class="cert-image-wrapper">
+                            <img src="certificates/images/cert_aws_badge.png"
+                                alt="AWS Academy Cloud Developing Graduate Badge" class="cert-image">
+                        </div>
+                        <div class="cert-body">
+                            <h4>AWS Academy Cloud Developing</h4>
+                            <p style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 4px;">AWS Academy
+                            </p>
+                            <p style="font-size: 0.8rem; color: var(--accent-3); margin-top: 6px;"><i
+                                    class="fas fa-file-pdf"></i> View Certificate</p>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- 8. Accelerate Your IT Career Path - Geek Academy -->
+                <div class="cert-card glass-card reveal">
+                    <a href="certificates/pdf/cert_geek_academy_it_career.pdf" target="_blank" rel="noopener"
+                        style="display: block; text-decoration: none; color: inherit;">
+                        <div class="cert-image-wrapper">
+                            <img src="certificates/images/cert_geek_academy_it_career.png"
+                                alt="Sertifikat Accelerate Your IT Career Path LPK Geek Academy" class="cert-image">
+                        </div>
+                        <div class="cert-body">
+                            <h4>Accelerate Your IT Career Path, Now!</h4>
+                            <p style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 4px;">LPK Geek
+                                Academy</p>
+                            <p style="font-size: 0.8rem; color: var(--accent-3); margin-top: 6px;"><i
+                                    class="fas fa-file-pdf"></i> View Certificate</p>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- 9. Seminar MotionSync as Digital Marketing - UNP -->
+                <div class="cert-card glass-card reveal">
+                    <a href="certificates/pdf/cert_seminar_motionsync.pdf" target="_blank" rel="noopener"
+                        style="display: block; text-decoration: none; color: inherit;">
+                        <div class="cert-image-wrapper">
+                            <img src="certificates/images/cert_seminar_motionsync.png"
+                                alt="Sertifikat Seminar MotionSync Universitas Negeri Padang" class="cert-image">
+                        </div>
+                        <div class="cert-body">
+                            <h4>Seminar "MotionSync as Digital Marketing"</h4>
+                            <p style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 4px;">Universitas
+                                Negeri Padang (Prodi Desain Komunikasi Visual)</p>
+                            <p style="font-size: 0.8rem; color: var(--accent-3); margin-top: 6px;"><i
+                                    class="fas fa-file-pdf"></i> View Certificate</p>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- 10. Webinar & Workshop IT - HMJ TI PNP -->
+                <div class="cert-card glass-card reveal">
+                    <a href="certificates/pdf/cert_webinar_workshop_it.pdf" target="_blank" rel="noopener"
+                        style="display: block; text-decoration: none; color: inherit;">
+                        <div class="cert-image-wrapper">
+                            <img src="certificates/images/cert_webinar_workshop_it.png"
+                                alt="Sertifikat Webinar & Workshop IT HMJ TI PNP" class="cert-image">
+                        </div>
+                        <div class="cert-body">
+                            <h4>Webinar & Workshop IT: Knowledge of IT</h4>
+                            <p style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 4px;">HMJ Teknologi
+                                Informasi PNP</p>
+                            <p style="font-size: 0.8rem; color: var(--accent-3); margin-top: 6px;"><i
+                                    class="fas fa-file-pdf"></i> View Certificate</p>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag"><i class="fas fa-envelope"></i> Contact</span>
+                <h2 class="section-title">Let's Connect</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="contact-hub reveal">
+                <!-- Ambient Subtle Glow -->
+                <div class="contact-glow-orb" aria-hidden="true"></div>
+
+                <!-- Top Main Card: Editorial & Primary Connect -->
+                <div class="contact-main-card glass-card">
+                    <div class="contact-badge-wrap">
+                        <span class="contact-status-pill">
+                            <span class="status-pulse-dot"></span>
+                            Available for Opportunities & Collaborations
+                        </span>
+                    </div>
+
+                    <h3 class="contact-card-title">Get In Touch</h3>
+                    <p class="contact-card-desc">
+                        Feel free to reach out for collaborations, career opportunities, or just to connect! I'm
+                        always open to discussing software development projects and innovative technical solutions.
+                    </p>
+
+                    <!-- 4 Connected Social & Developer Channel Cards -->
+                    <div class="contact-channels-grid">
+                        <!-- LinkedIn -->
+                        <a href="https://www.linkedin.com/in/rizki-andrian-709986312/" target="_blank" rel="noopener"
+                            class="channel-tile linkedin-tile">
+                            <div class="tile-icon-box">
+                                <i class="fab fa-linkedin-in"></i>
+                            </div>
+                            <div class="tile-info">
+                                <div class="tile-header">
+                                    <span class="tile-platform">LinkedIn</span>
+                                    <i class="fas fa-arrow-up-right-from-square tile-arrow"></i>
+                                </div>
+                                <span class="tile-handle">Rizki Andrian</span>
+                                <span class="tile-tag">Professional Network</span>
+                            </div>
+                        </a>
+
+                        <!-- GitHub -->
+                        <a href="https://github.com/RizkiAndrian16" target="_blank" rel="noopener"
+                            class="channel-tile github-tile">
+                            <div class="tile-icon-box">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <div class="tile-info">
+                                <div class="tile-header">
+                                    <span class="tile-platform">GitHub</span>
+                                    <i class="fas fa-arrow-up-right-from-square tile-arrow"></i>
+                                </div>
+                                <span class="tile-handle">@RizkiAndrian16</span>
+                                <span class="tile-tag">Code & Projects</span>
+                            </div>
+                        </a>
+
+                        <!-- Email Direct -->
+                        <a href="mailto:rizkiandrian489@gmail.com" class="channel-tile email-tile">
+                            <div class="tile-icon-box">
+                                <svg class="tile-icon-svg" viewBox="0 0 24 24" width="22" height="22"
+                                    fill="currentColor" aria-hidden="true">
+                                    <path
+                                        d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z" />
+                                </svg>
+                            </div>
+                            <div class="tile-info">
+                                <div class="tile-header">
+                                    <span class="tile-platform">Email</span>
+                                    <i class="fas fa-arrow-up-right-from-square tile-arrow"></i>
+                                </div>
+                                <span class="tile-handle email-handle">rizkiandrian489@gmail.com</span>
+                                <span class="tile-tag">Direct Inquiry</span>
+                            </div>
+                        </a>
+
+                        <!-- WhatsApp Direct -->
+                        <a href="https://wa.me/6282387488889?text=Halo%20Rizki,%20saya%20tertarik%20dengan%20portofolio%20Anda"
+                            target="_blank" rel="noopener" class="channel-tile whatsapp-tile">
+                            <div class="tile-icon-box">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <div class="tile-info">
+                                <div class="tile-header">
+                                    <span class="tile-platform">WhatsApp</span>
+                                    <i class="fas fa-arrow-up-right-from-square tile-arrow"></i>
+                                </div>
+                                <span class="tile-handle">+62 823-8748-8889</span>
+                                <span class="tile-tag">Fast Response</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Location Text -->
+                    <div class="contact-location-text">
+                        <i class="fas fa-location-dot"></i>
+                        <span>Padang, West Sumatra, Indonesia</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Tilt.js for 3D Glass Cards -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
+    <script src="js/main.js?v=17.0"></script>
+</body>
+
+</html>

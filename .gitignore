@@ -1,0 +1,14 @@
+# Secrets & Local Configs
+ngrok/ngrok.yml
+
+# OS & Environment
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# IDE & Editor
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
